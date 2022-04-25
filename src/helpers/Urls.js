@@ -1,0 +1,1 @@
+export const endpoint = " https://minibackend-veronica-duque.herokuapp.com/data/"

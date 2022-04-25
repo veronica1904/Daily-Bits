@@ -1,0 +1,254 @@
+/*Documento general de estilos*/
+
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+  --white: #fffffe; 
+  --black: #16161a; 
+  --primary: #7f5af0; 
+  --secondary: #a786df; 
+  --tertiary: #72757e; 
+  --green: #2cb67d; 
+  --grey: #94a1b2; 
+  --purple: #6b47dc; 
+  --neutral: #232e35; 
+  --red: #ef4565; 
+  --subtitle2: 600 0.75rem/normal Nunito; 
+  --headline-headline1: extrabold 1.5rem/normal Nunito; 
+  --headline-headline2: 700 1.375rem/normal Nunito; 
+  --subtitle-subtitle1: 600 1.125rem/normal Nunito; 
+  --body1-regular: 400 1rem/1.5rem Nunito; 
+  --body1-bold: 700 1rem/1.5rem Nunito; 
+  --body2-regular: 400 0.875rem/normal Nunito; 
+  --body2-bold: 700 0.875rem/normal Nunito; 
+  --button-button: 600 0.875rem/1rem Nunito; 
+  --caption-caption: 400 0.6875rem/normal Nunito; 
+    
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--black);
+  font: var(--body1-regular);
+}
+
+#root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-none {
+  display: none;
+}
+
+/*Estilos seccion login*/
+.img-login{
+  width:80px;
+  margin: 35px;
+}
+
+.img-google{
+  margin: 0 8px;
+}
+
+.cntr-login{
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  border-top: solid white 1px;
+  margin-top: 10px;
+}
+
+.cntr-login form{
+   width: 100%;
+   margin: 10px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.cntr-login form label{
+  font-size: 16px;
+  margin: 8px 16px;
+}
+
+.cntr-login form input{
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #72757E;
+  border-radius: 4px;
+}
+
+.cntr-login p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fffffe;
+  margin-top: 32px;
+}
+
+.cntr-login p span{
+  color: #2cb67d;
+  text-decoration: underline;
+}
+
+.cntr-login .enlace-inscripcion{
+  color: #2cb67d;
+  margin: 0 3px;
+}
+
+.cntr-login .alerta{
+  color: #ef4565;
+  margin: 5px;
+}
+
+/*Estilos sección home*/
+.link-categ-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  margin: 10px 5px;
+  text-decoration: none;
+}
+
+.link-categ-home:first-child{
+  width: 100%;
+}
+
+.link-categ-home img{
+  margin: 15px;
+  padding: 6px;
+  border: solid 7px var(--white);
+  border-radius: 50%;
+}
+
+.link-categ-home p{
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.img-pregunta{
+  width: 20%;
+  margin: 10px
+}
+
+.resp-correcta, .resp-incorrecta{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.resp-correcta div, .resp-incorrecta div{
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resp-correcta div p, .resp-incorrecta div p{
+
+  font-size: 16px;
+  font-weight:700;
+  margin-bottom: 10px;
+
+}
+
+.resp-correcta div button, .resp-incorrecta div button{
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    color: #fffffe;
+}
+
+.resp-correcta div{
+  background-color: #ACFFCF;
+}
+
+.resp-correcta div p{
+  color: var(--black)
+}
+
+.resp-correcta div button{
+  background-color: var(--green);
+}
+
+.resp-incorrecta div{
+  background-color:rgba(249, 207, 215, 1);
+}
+
+.resp-incorrecta div p{
+  color: var(--red);
+}
+
+.resp-incorrecta div button{
+  background-color: var(--red);
+}
+
+/*Estilos seccion estadísticas*/
+.cntr-est img{
+  margin-right:10px;
+}
+
+.cntr-est p{
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.cntr-est .valor{
+  font-weight: 400;
+  flex-grow: 0;
+}
+
+.cntr-est .green-select{
+  color: var(--green)
+}
+
+.cntr-est .red-select{
+  color: var(--red)
+}
+
+.link-admin{
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700px;
+  color: var(--green);
+}
+
+.link-home{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500px;
+  color: var(--secondary);
+}
